@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Times New Roman, Courier New, Arial;
+  margin: 0;
+ background-color: #222;
+ color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Gordon Robertson McIlreavy A Short Folio.</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img src="3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="5.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img src="6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img src="8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img src="9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img src="11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="12.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">P</a>
+  <a class="next" onclick="plusSlides(1)">N</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Who knows what the value of an image really is all I can tell you is that on the internet businesses can make alot of money from a well considered image.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="One of the most important functions of an image online is to capture and hold the attention of prospective users and clients this is not easy in a competitive field.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Many websites are basically just text forms, data input or dry static sales forms, well made images can turn these sites into vibrant and interesting sales fronts.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Click bait is simply the use of an exciting image to give a false idea about content, well made images create the interest to find out more without dissapointing the user.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Fashion houses and magazines have demonstrated for years that a well made image can give a sense of luxury and beauty increasing the perceived value of the product or service you purvey.">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Well made images set tone. Tone gives subconsious queues about who you want to deal with, is your brand aimed at a budget market, is it aimed at a exclusive clientele. Tone is everything.">
+    </div>
+  </div>
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Simply engaging peoples brains with the unusual will guide people to your product. Excite them and you will begin to build a brand.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Images are without doubt one of the quickest, easiest and most cost effective ways to attract business to your product.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Images add character and personality to your websites and applications, they change the way people view your brand they add life and vibrancy to your aesthetic.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(10)" alt="A good image can change the way the user looks at your brand it captures the imagination and asks the user to see you as a source of inspiration.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Well made well considered images should be able to seperate you from your competition and positively add to your brand.">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Images often stick in the mind more than words, phrases, or even figures, often the thing that makes your products web page the most memorable is its aesthetic.">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
